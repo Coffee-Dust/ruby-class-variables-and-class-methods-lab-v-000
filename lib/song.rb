@@ -26,7 +26,7 @@ class Song
     return unique_artists
   end
 
-  def self.genres_count
+  def self.genre_count
     count = {}
     self.genres.each do |genre|
       count[genre] = @@genres.select{|g| g == genre}.count
@@ -34,7 +34,7 @@ class Song
     return count
   end
 
-  def self.artists_count
+  def self.artist_count
     count = {}
     self.artists.each do |artist|
       count[artist] = @@artists.select{|g| g == artist}.count
