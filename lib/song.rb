@@ -15,6 +15,6 @@ class Song
   end
 
   def self.genres
-
+    return genres.each { |genre|  }
   end
 end
