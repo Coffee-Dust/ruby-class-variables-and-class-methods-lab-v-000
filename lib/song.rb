@@ -15,6 +15,7 @@ class Song
   end
 
   def self.genres
+    unique_genres = []
     return genres.each { |genre|  }
   end
 end
