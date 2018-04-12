@@ -21,7 +21,8 @@ class Song
 
   def self.artists
     unique_artists = []
-    return @@artists.each { |artist| unique_artists << artist if !unique_artists.include?(artist) }
+    @@artists.each { |artist| unique_artists << artist if !unique_artists.include?(artist) }
+    return unique_artists
   end
 
   def self.genres_count
